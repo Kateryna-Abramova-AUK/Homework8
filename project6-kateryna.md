@@ -1,0 +1,5 @@
+I chose Option B because it provlooked more clear for me, we look at the pull-based reactivity model. This approach is good for understanding how declarative approach manage the "change tracking problem" by comparing state snapshots, for me it more easy to understand. Just compare and look for changes, if any perform specific action depending on the change.
+
+The core algorithm is for this is a recursive tree walk that performs a comparison of two Virtual DOM trees. It assumes that different node types produce entirely different subtrees, which keeps the update complexity at O(n) (because for Signals it is O(1)) relative to the number of UI nodes.
+
+My implementation relates to React's reconciliation process. It generates a list of "patches"—such as replace, update-props, and insert and next browser performs the minimal necessary operations. This minimizes expensive DOM tasks like style recalculation and layout, which is the primary reason these frameworks exist.

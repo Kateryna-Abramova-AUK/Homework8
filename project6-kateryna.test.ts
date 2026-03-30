@@ -1,4 +1,4 @@
-import { diff } from "./virtualdom.ts";
+import { diff } from "./project6-kateryna.ts";
 /**
  * Test Suite for Mini DOM Differ
  */
