@@ -4,7 +4,7 @@ import { diff } from "./project6-kateryna.ts";
  */
 function runTests() {
 
-  // TEST 1: Node Replacement (Type Change)
+  // TEST 1: Node Replacement 
   const t1_old = { type: "div", props: {}, children: ["Hello"] };
   const t1_new = { type: "span", props: {}, children: ["Hello"] };
   const p1 = diff(t1_old, t1_new, [0]);
@@ -40,5 +40,4 @@ function runTests() {
   console.log("\nAll tests passed");
 }
 
-// Execute the tests
 runTests();
